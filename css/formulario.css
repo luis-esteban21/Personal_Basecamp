@@ -1,0 +1,65 @@
+body {
+
+    background-image: url(/Imagenes/FONDO.jpg);
+    background-size: 100vw 100vh;
+    /*image al 100% del ancho(vw) y del alto(vh) de la ventana*/
+    background-attachment: fixed;
+    /*Imagen se queda fija*/
+    margin: 0;
+    /*Quitamos espacios del body*/
+}
+
+form {
+    width: 500px;
+    margin: auto;
+    /*Centra horizontalmente*/
+    background: rgba(0, 0, 0, 0.2);
+    /* Rojo, Verde, Azul, Tranparencia*/
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-radius: 8px;
+    /*Redondear esquinas de formularoio*/
+}
+
+input,
+textarea {
+    /*Afecta a input y textarea, se separan por coma*/
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+textarea {
+    min-height: 120px;
+    /*Alto Minimo de 120px*/
+    max-height: 200px;
+    /**Alto Maximo de 120px*/
+    max-width: 100%;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+#botonera {
+    background: black;
+    /*Fondo Botonera*/
+    color: white;
+    /*Color texto botonera*/
+    padding: 25px;
+    /*Espacio*/
+}
+
+@media (max-width:480px) {
+    form {
+        width: 80%;
+    }
+}
