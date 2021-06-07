@@ -64,7 +64,9 @@ body {
   }
 
 
-/*Contact sectiom*/
+/*==================================
+    SECCION FORMULARIO DE CONTACTO
+====================================*/
 
 /* estilos  */
 
@@ -170,7 +172,7 @@ Estilos info
 }
 .info .redes-s a:hover{
   box-shadow: 0px 3px 8px rgba(0, 0, 0, .4);
-  /* background: #000; */
+
 }
 
 /* ===========================================
@@ -310,6 +312,37 @@ footer {
   footer p{
     color:#f3f3f3;
     text-align:center;
+  }
+
+
+  /*======================MEDIA QUERIES FORMULARIO DE CONTACTO=====================*/
+  @media (max-width: 520px){
+    .contenedor{
+        padding: 40px 20px;
+    }
+ 
+    .contenido .info,
+    .contenido .formulario{
+        width: 100%;
+        padding: 0px;
+    }
+ 
+    .contenido .info{
+        margin-bottom: 30px;
+    }
+ }
+ 
+ @media (max-width: 800px){
+   
+     .contenido .info,
+     .contenido .formulario{
+         width: 100%;
+         padding: 0px;
+     }
+  
+     .contenido .info{
+         margin-bottom: 30px;
+     }
   }
 
 /*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
