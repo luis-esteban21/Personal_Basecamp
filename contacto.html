@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" 
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/formulario.css" />
+    <link rel="stylesheet" href="./css/estilo.css" />
 </head>
 <header>
     <nav>
@@ -37,43 +41,56 @@
 <script src="./js/script.js"></script>
 
 <body>
-    <section id="contact">
-        <div class="section-content">
-            <h1 class="section-header">Get in <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Touch with us</span></h1>
-            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
-        </div>
-        <div class="contact-section">
-        <div class="container">
-            <form>
-                <div class="col-md-6 form-line">
-                      <div class="form-group">
-                          <label for="exampleInputUsername">Your name</label>
-                        <input type="text" class="form-control" id="" placeholder=" Enter Name">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputEmail">Email Address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
-                      </div>	
-                      <div class="form-group">
-                        <label for="telephone">Mobile No.</label>
-                        <input type="tel" class="form-control" id="telephone" placeholder=" Enter 10-digit mobile no.">
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for ="description"> Message</label>
-                           <textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
-                      </div>
-                      <div>
+    <div class="contenedor">
 
-                          <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
-                      </div>
-                      
+        <h1>Formulario Contacto</h1>
+
+        <div class="contenido">
+
+            <div class="info">
+
+                <div class="col">
+                    <i class="icono fas fa-map-marker-alt"></i>
+                    <p>Av. Las COndes #12345. Santiago - Chile</p>
                 </div>
+
+                <div class="col">
+                    <i class="icono fas fa-envelope"></i>
+                    <p>consulta@inclusiv.org</p>
+                </div>
+
+                <div class="col">
+                    <i class="icono fas fa-phone"></i>
+                    <p>(02) 5841 4457 <br> (09) 33415473</p>
+                </div>
+
+                <div class="redes-s">
+
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+
+                </div>
+
+            </div>
+
+            <form action="enviado.html" method="GET" class="formulario">
+
+                <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+                <input type="text" name="correo" placeholder="Correo electróico" id="correo">
+                <input type="text" name="asunto" placeholder="Asunto" id="asunto">
+                <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                <button type="button" onclick="validarFormulario()" >Enviar</button>
+
+
             </form>
+
         </div>
-        </div>
-    </section>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/script.js"></script>
 
     <!--========================================================== -->
     <!-- SECCION ACERCA DE NOSOTROS-->
