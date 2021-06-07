@@ -1,99 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="./css/formulario.css">
-    <title>CONTACTANOS</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/formulario.css" />
 </head>
 <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">INICIO</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">SOBRE NOSOTROS<span class="sr-only">(Inicial)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">INSTITUCIONES</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">HERRAMIENTAS Y APOYOS</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">HERRAMIENTAS</a>
-                        <a class="dropdown-item" href="#">APOYOS</a>
-                        <a class="dropdown-item" href="#">SITIOS DE INTERES</a>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">CONTACTANOS</a>
-                </li>
+    <nav>
+        <a href="#">
+            <img src="./img/logo.png" alt="logo" class="logo">
 
-        </div>
-        </li>
+        </a>
+        <ul class="enlaces-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Equipo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Busqueda">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-        </form>
-        </div>
+        <button class="ham" type="button">
+            <span class="br-1"></span>
+            <span class="br-2"></span>
+            <span class="br-3"></span>
+        </button>
     </nav>
+
 </header>
+<script src="./js/script.js"></script>
 
 <body>
-    <form>
-        <h2>ESCRIBENOS ACA...</h2>
-        <input type="text" name="Nombre" placeholder="Nombre">
-        <input type="text" name="Correo" placeholder="Correo">
-        <input type="text" name="Telefono" placeholder="Teléfono">
-        <textarea name="Mensaje"></textarea>
-        <input type="button" value="Enviar" id="botonera">
-    </form>
-    <footer>
+    <section id="contact">
+        <div class="section-content">
+            <h1 class="section-header">CONTACTANOS <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s">Llena y envía nuestro formulario</span></h1>
+            <h3>Intentaremos responder tus consultas a la brevedad</h3>
+        </div>
+        <div class="contact-section">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-6 text-left">
-                    <h6 class="text-muted.text-white">CONTACTO:</h6>
-                    <h6 class="text-muted.text-white">
-                        San Freancisco 1058 piso 2 Depto 20A<br>
-                        Puerto Varas.<br>
-                        Teléfonos: 2-29857415 – 9-44875206.<br>
-                        <a href="contacto.html">CONTACTANOS</a>
-                    </h6>
+            <form>
+                <div class="col-md-6 form-line">
+                      <div class="form-group">
+                          <label for="exampleInputUsername">Tu Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Digita tu nombre completo">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder=" Ingresa tu email">
+                      </div>	
+                      <div class="form-group">
+                        <label for="telephone">Número de teléfono</label>
+                        <input type="tel" class="form-control" id="phone" placeholder=" Ingresa tu numero de teléfono">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for ="description">Tu mensaje</label>
+                           <textarea  class="form-control" id="description" placeholder="Dejanos tu mensaje"></textarea>
+                      </div>
+                      <div>
+
+                          <button type="button" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Enviar</button>
+                      </div>
+                      
                 </div>
+            </form>
+        </div>
+        </div>
+    </section>
 
-                <div class="col-xs-12 col-md-6 text-right">
-                    <h6 class="text-muted.text-white">ENCUENTRANOS EN LAS REDES</h6>
-                    <div class="redes-footer">
-                        <a href="https://www.facebook.com/"><img src="./img/Facebook2.png"></a>
-                        <a href="https://twitter.com/"><img src="./img/Twitter.png"></a>
-                        <a href="https://www.instagram.com/"><img src="./img/instagram.png"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
+    <!--========================================================== -->
+    <!-- SECCION ACERCA DE NOSOTROS-->
+    <!--========================================================== -->
 
-                <div class="col-md-12 text-right">
-                    <p class="text-muted.text-white">Luis Andres Nuñez Gonzalez @2021.<br> Todos los derechos reservados.
-                    </p>
-                </div>
-
-            </div>
-
+    <section>
+        <div class="container w-50 m-auto text-center" id="equipo">
+            <h1 class="mb-5 fs-2">Siempre conectados, <span class="text-primary">siempre atentos</span>.</h1>
+            <p class="fs-4 ">Estaremos atentos a tus comentarios y consultas, buscamos mejorar siempre nuestros canales
+                de comunicación y recepción de ideas</p>
         </div>
 
+        <div id="local" class="border-top border-2">
+            <div class="mapa"> </div>
+            <div>
+                <div class="wrapper-local">
+                    <h2>Nos ubicamos en Santiago, comuna de Las Condes</h2>
+                    <h2 class="text-primary mb-4" id="typewriter"></h2>
+                    <p class="fs-5 text-body">Nuestra oficina en las condes es solo para efectos de realizar reuniones y
+                        desarrollar el proyecto, nuestra idea es fortalecer la comunicación via web</p>
+                </div>
+            </div>
+        </div>
 
+    </section>
+
+
+    <!--========================================================== -->
+    <!--FOOTER-->
+    <!--========================================================== -->
+
+
+    <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
+        <p class="fs-5 px-3  pt-3">Luis Nuñez Gonzalez.Todos Los Derechos Reservados 2021</p>
+        <div id="iconos">
+            <a href="https://www.facebook.com"><img src="./img/Facebook2.png"></a>
+            <a href="https://www.twitter.com"><img src="./img/Twitter.png"></a>
+            <a href="https://www.instagram.com"><img src="./img/instagram.png"></a>
+        </div>
     </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="./js/script.js"></script>
+
 </body>
 
 </html>
