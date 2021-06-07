@@ -1,5 +1,3 @@
-
-
 /*=======MENU DE NAVEGACION========*/
 body {
     margin: 0;
@@ -246,7 +244,9 @@ Estilos formulario
   
   }
 
-  /*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
+  /*====================================
+      SECCION NUESTRO EQUIPO IMAGEN
+  ======================================*/
 
 
 
@@ -256,7 +256,11 @@ Estilos formulario
 }
 
 
-/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
+/*====================================
+     SECCION NUESTRO EQUIPO MAPA
+======================================*/
+
+
 #local {
     margin-top:50px;
     background-color: #f3f3f3;
@@ -281,7 +285,10 @@ Estilos formulario
 }
 
 
-/*===========================SECCION LAS CONDES==================================*/
+/*================================
+      SECCION LAS CONDES
+==================================*/
+
 #numeros-local{
     margin:0 !important;
     padding:0 !important;
