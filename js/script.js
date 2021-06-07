@@ -144,3 +144,7 @@ $(document)
 	        });
 	    }, 100);
 	})
+
+    $('.galeria__img').click(function(e){
+        var img = e.target.src;
+    })
